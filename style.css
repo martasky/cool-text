@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+span {
+  display: inline-block;
+  opacity: 0;
+}
+
+.ani {
+  animation: ani_kf 1s 1 ease-in-out forwards;
+  animation-timing-function: cubic-bezier(0, 0.22, 0.58, 1.49);
+}
+@keyframes ani_kf {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-20vw);
+
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: black;
+}
+h1 {
+  color: white;
+  font-size: 4rem;
+  font-family: "Fredericka the Great", cursive;
+  transform: translateY(20vw);
+  /* animation: opacity_kf 1s 1 ease-in-out forwards; */
+}
+
+/* @keyframes opacity_kf {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
